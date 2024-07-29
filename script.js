@@ -21,6 +21,13 @@ function appendDecimal(decimal) {
     display.textContent += decimal;
   }
 }
+function effacerUnChiffre() {
+    let valeurAffichage = display.value;
+   // if (valeurAffichage.length > 0) {
+      display.value = valeurAffichage.slice(0, -1);
+    //} 
+    
+}
 
 function clearDisplay() {
     display.textContent = '';
